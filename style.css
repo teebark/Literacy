@@ -1,0 +1,249 @@
+/*
+ Theme Name:   Literacy GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--orange:     #f2633e;
+	--green:      #24c2ad;
+	--gold:       #f3b71c;
+	--light-gold: #e9cf3a;
+	--gray:       #131313;
+	--light-gray: #f2f2f2;
+	--black:      #000000;
+	--white:      #ffffff;
+}
+/* Gutenberg color palette */
+.has-orange-color {
+	color: #f2633e;
+}
+.has-orange-background-color {
+	background-color: #f2633e;
+}
+.has-green-color {
+	color: #24c2ad;
+}
+.has-green-background-color {
+	background-color: #24c2ad;
+}
+.has-gray-color {
+	color: #131313;
+}
+.has-gray-background-color {
+	background-color: #131313;
+}
+.has-lightgray-color {
+	color: #f2f2f2;
+}
+.has-lightgray-background-color {
+	background-color: #f2f2f2;
+}
+.has-black-color {
+	color: #000000;
+}
+.has-black-background-color {
+	background-color: #000000;
+}
+.has-white-color {
+	color: #ffffff;
+}
+.has-white-background-color {
+	background-color: #ffffff;
+}
+/* Header height */
+.main-navigation {
+	height: 5rem;
+}
+/* Adjust logo */
+.main-navigation .inside-navigation {
+	align-items: flex-end;
+	top: 1rem;
+	margin-left: 2rem;
+}
+/* Get rid of space between navbar and hero image */
+#content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Delete spacing below cover image */
+.wp-block-cover.has-background-dim {
+	margin-bottom: 0 !important;
+}
+.wp-block-cover p {
+	margin-bottom: 0;
+}
+/* Indent cover text */
+.wp-block-cover__inner-container {
+	padding-left: 5rem;
+}
+/* Firt line of cover title */
+h1.cover-title {
+	font-size: 1.2rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+	padding: .2rem;
+}
+h2.cover-title {
+	width: 30rem;
+}
+p.cover-title {
+	width: 30rem;
+}
+p.our-mission {
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+}
+/* Override theme adding h2 and h3 css whenever a background is added */
+h2,
+h2.has-background {
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+}
+/* Override theme adding h2 for media-text blocks */
+h2.media-text,
+h2.media-text.has-background {
+	/* padding: 0 2rem 0 2rem !important; */
+	margin-bottom: 0 !important;
+}
+.media-text .wp-block-button__link {
+	border: 2px solid var(--green);
+	margin-left: 2rem;
+}
+.home .tutor-experience .ugb-card__item1 {
+	border-top: 10px solid var(--orange);
+}
+.home .tutor-experience .ugb-card__item2 {
+	border-top: 10px solid var(--green);
+}
+.home .tutor-experience .ugb-card__item3 {
+	border-top: 10px solid var(--black);
+	border
+}
+.home .tutor-experience .ugb-card__item1 .ugb-button {
+	border: 2px solid var(--orange) !important;
+}
+.home .tutor-experience .ugb-card__item2 .ugb-button {
+	border: 2px solid var(--green) !important;
+}
+/* Our team tabs - our staff */
+.kt-inner-tab-1 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-2 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-3 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-4 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-5 .kt-tab-inner-content-inner h3 {
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+}
+.kt-inner-tab-1 .kt-tab-inner-content-inner h4,
+.kt-inner-tab-2 .kt-tab-inner-content-inner h4,
+.kt-inner-tab-3 .kt-tab-inner-content-inner h4 {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+.kt-inner-tab-1 .kt-tab-inner-content-inner  p:nth-child(4n + 1) {
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+}
+/* Our team tabs - our board */
+.kt-inner-tab-3 .kt-tab-inner-content-inner  p:nth-child(3n + 1) {
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+}
+/* Footer tweets */
+.tweets {
+	background: var(--green,green);
+}
+.tweets h4 {
+	color: black;
+	font-size: 1rem;
+	font-weight: 900;
+}
+.tweets p {
+	color: black;
+	font-size: .8rem;
+}
+/* Footer links */
+.footer-links {
+	background: black;
+}
+.footer-links h4 {
+	color: white;
+}
+.footer-links p {
+	margin-bottom: 0;
+}
+.footer-links p a {
+	font-size: .8rem;
+	color: white;
+}
+.footer-links p:first-child a {
+	font-weight: 900;
+}
+/* Footer copyright */
+.copyright {
+	background: var(--gray,gray);
+}
+.copyright p {
+	color: white;
+	font-size: .8rem;
+}
+/* Adjust size of logo in footer */
+.copyright .wp-block-image img {
+	height: 1.5rem;
+}
+.footer-widgets .widget {
+	margin: 0;
+}
+.footer-widgets-container {
+	padding: 0;
+}
+.wp-show-posts {
+	padding: 2rem 3rem 0 3rem;
+}
+/* Turn off default copyright */
+.site-info {
+	display: none;
+}
+@media (min-width: 1025px) {
+/* Set up twitter footer ----------------------------------------------------------------------- */
+.indent {
+	padding: 0 10rem 0 10rem;
+}
+#footer-widgets .tweets .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	}
+#footer-widgets .tweets .wp-show-posts h4 {
+	margin-bottom: 0;
+	}
+#footer-widgets .tweets .wp-show-posts > article {
+	flex: 1;
+	}
+/* Set up twitter footer */
+#footer-widgets .footer-links .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	}
+#footer-widgets .footer-links .wp-show-posts > article {
+	flex: 1;
+	}
+/* Set up copyright footer */
+#footer-widgets .copyright .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	}
+#footer-widgets .copyright .wp-show-posts > article {
+	flex: 1;
+	}
+}
