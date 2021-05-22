@@ -10,7 +10,7 @@
 /* Assign color variables */
 :root {
 	--orange:     #f2633e;
-	--green:      #24c2ad;
+	--green:      #29d7c0;
 	--gold:       #f3b71c;
 	--light-gold: #e9cf3a;
 	--gray:       #131313;
@@ -26,10 +26,10 @@
 	background-color: #f2633e;
 }
 .has-green-color {
-	color: #24c2ad;
+	color: #29d7c0;
 }
 .has-green-background-color {
-	background-color: #24c2ad;
+	background-color: #29d7c0;
 }
 .has-gray-color {
 	color: #131313;
@@ -115,20 +115,25 @@ h2.media-text.has-background {
 	border: 2px solid var(--green);
 	margin-left: 2rem;
 }
-.home .tutor-experience .ugb-card__item1 {
+.home .tutor-experience .ugb-card__item1,
+.leading-men .pressing-challenges .ugb-card__item1 {
 	border-top: 10px solid var(--orange);
 }
-.home .tutor-experience .ugb-card__item2 {
+.home .tutor-experience .ugb-card__item2,
+.leading-men .pressing-challenges .ugb-card__item2 {
 	border-top: 10px solid var(--green);
 }
-.home .tutor-experience .ugb-card__item3 {
+.home .tutor-experience .ugb-card__item3,
+.leading-men .pressing-challenges .ugb-card__item3 {
 	border-top: 10px solid var(--black);
 	border
 }
-.home .tutor-experience .ugb-card__item1 .ugb-button {
+.home .tutor-experience .ugb-card__item1 .ugb-button,
+.leading-men .pressing-challenges .ugb-card__item1 .ugb-button {
 	border: 2px solid var(--orange) !important;
 }
-.home .tutor-experience .ugb-card__item2 .ugb-button {
+.home .tutor-experience .ugb-card__item2 .ugb-button,
+.leading-men .pressing-challenges .ugb-card__item2 .ugb-button {
 	border: 2px solid var(--green) !important;
 }
 /* Our team tabs - our staff */
@@ -147,7 +152,8 @@ h2.media-text.has-background {
 	margin-top: 1rem;
 	margin-bottom: 0;
 }
-.kt-inner-tab-1 .kt-tab-inner-content-inner  p:nth-child(4n + 1) {
+.kt-inner-tab-1 .kt-tab-inner-content-inner  p:nth-child(4n + 1),
+.kt-inner-tab-2 .kt-tab-inner-content-inner  p:nth-child(4n + 1) {
 	padding-bottom: 1rem;
 	border-bottom: 3px solid var(--green,green);
 	display: table-cell;
@@ -157,6 +163,126 @@ h2.media-text.has-background {
 	padding-bottom: 1rem;
 	border-bottom: 3px solid var(--green,green);
 	display: table-cell;
+}
+/* The challenge page blocks */
+.challenge-blocks .wp-block-column {
+	border-top: 8px solid var(--orange,orange);
+}
+.challenge-blocks h3 {
+	color: var(--orange,orange);
+	padding-top: 1rem;
+	font-size: 1rem;
+	font-weight: 900;
+}
+/* Our work text columns */
+.our-work-left-column {
+	margin: 5rem;
+}
+.our-work-left-column p {
+	font-size: x-large;
+	line-height: 1.3;
+	
+}
+.our-work-right-column {
+	margin: 5rem 5rem 0 5rem;
+}
+.our-work-reading {
+	padding: 0 0 2rem 0;
+}
+/* Our work page blocks */
+.our-work-coaches .wp-block-column {
+	border-top: 8px solid var(--orange,orange);
+}
+.our-work-coaches h3 {
+	color: var(--orange,orange);
+	padding-top: 1rem;
+	font-size: 1rem;
+	font-weight: 900;
+}
+.our-work-coaches h4 {
+	font-weight: 900;
+}
+.our-work-coaches .wp-block-column:nth-child(1) {
+	border-top: 8px solid var(--black,black);
+}
+.our-work-coaches .wp-block-column:nth-child(1) h3 {
+	color: var(--black,black);
+}
+.our-work-coaches .wp-block-column:nth-child(2) {
+	border-top: 8px solid var(--green,green);
+}
+.our-work-coaches .wp-block-column:nth-child(2) h3 {
+	color: var(--green,green);
+}
+h2.our-work-model {
+	background: var(--green,green);
+}
+.our-work-model-grades h3 {
+	font-size: 1rem;
+	color: var(--orange,orange);
+}
+.wp-block-image.our-work-model {
+	background: var(--green,green);
+}
+.our-work-model-grades img {
+	margin: -4rem 0;
+}
+/* FAQ section */
+.our-work .faq,
+.leading-men .faq-fellow {
+	background: var(--black,black);
+}
+.our-work .faq span.uagb-question,
+.leading-men .faq-fellow span.uagb-question {
+	color: var(--green,green);
+}
+.our-results .wp-block-column.grid-upper-right,
+.our-results .wp-block-column.grid-lower-right {
+	margin-left: 0;
+}
+.our-results .grid-upper-right p,
+.our-results .grid-upper-right p.has-background {
+	margin-bottom: 0;
+}
+/*
+.our-results .our-results-grid-upper-right .our-results-teacher {
+	border-top: 4px solid black;
+	padding: 4px 0 0 0;
+	display: table-cell;
+}
+*/
+/*
+.our-work .faq .uagb-faq-questions-button.uagb-faq-questions {
+	bsckground: var(--black,black);
+}
+*/
+.where-we-work .wp-block-columns.state-icons .wp-block-column {
+	background: var(--green,green);
+}
+.where-we-work .wp-block-columns.state-icons .wp-block-column:not(:first-child) {
+	margin-left: .2rem;
+}
+.where-we-work .sidebar-container {
+	margin-top: 0;
+}
+.where-we-work .sidebar-container .ugb-container__wrapper {
+	padding: 0 !important;
+	box-shadow: none !important;
+}
+.where-we-work .wp-block-column.sidebar {
+	margin-left: 0;
+}
+.where-we-work .wp-block-ugb-icon.sidebar-icon {
+	margin-bottom: 0;
+}
+.where-we-work p.sidebar-number {
+	font-size: 3rem;
+	color: orange;
+	margin-bottom: .1rem;
+}
+.where-we-work p.sidebar-group {
+	font-size: 2rem;
+	margin-bottom: .1rem;
 }
 /* Footer tweets */
 .tweets {
@@ -217,6 +343,10 @@ h2.media-text.has-background {
 /* Set up twitter footer ----------------------------------------------------------------------- */
 .indent {
 	padding: 0 10rem 0 10rem;
+}
+.wp-block-columns.our-work-coaches,
+.wp-block-columns.challenge-blocks {
+	margin: 0 2rem;
 }
 #footer-widgets .tweets .wp-show-posts {
 	display: flex;
